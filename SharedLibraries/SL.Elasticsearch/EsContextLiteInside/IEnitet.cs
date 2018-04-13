@@ -1,0 +1,4 @@
+﻿namespace SL.Elasticsearch.EsContextLiteInside
+{
+
+}

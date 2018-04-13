@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageTransformation", "ImageTransformation\ImageTransformation.csproj", "{5A2574A7-1DF1-414D-81B9-0A8EEEF7FF3C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{3D75167B-F407-483D-AB97-2AB2391A2745}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingTools", "..\SharedLibraries\WorkingTools\WorkingTools.csproj", "{A25830AB-027E-4C11-8F04-7F5718DEFD20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SL.ConsoleWriter", "..\SharedLibraries\SL.ConsoleWriter\SL.ConsoleWriter.csproj", "{97521579-1E17-4E43-A426-794CA396C848}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A2574A7-1DF1-414D-81B9-0A8EEEF7FF3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A2574A7-1DF1-414D-81B9-0A8EEEF7FF3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A2574A7-1DF1-414D-81B9-0A8EEEF7FF3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A2574A7-1DF1-414D-81B9-0A8EEEF7FF3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A25830AB-027E-4C11-8F04-7F5718DEFD20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A25830AB-027E-4C11-8F04-7F5718DEFD20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A25830AB-027E-4C11-8F04-7F5718DEFD20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A25830AB-027E-4C11-8F04-7F5718DEFD20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97521579-1E17-4E43-A426-794CA396C848}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97521579-1E17-4E43-A426-794CA396C848}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97521579-1E17-4E43-A426-794CA396C848}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97521579-1E17-4E43-A426-794CA396C848}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A25830AB-027E-4C11-8F04-7F5718DEFD20} = {3D75167B-F407-483D-AB97-2AB2391A2745}
+		{97521579-1E17-4E43-A426-794CA396C848} = {3D75167B-F407-483D-AB97-2AB2391A2745}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88FEAE6C-CF53-4231-880E-BC52C8C1E1A6}
+	EndGlobalSection
+EndGlobal
