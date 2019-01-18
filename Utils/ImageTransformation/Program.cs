@@ -40,7 +40,7 @@ namespace ImageTransformation
                     || directoryName == directoryOrigin)
                 {
                     Report.WriteLine(directory, ConsoleColor.Yellow);
-                    DirectoryWt.Delete(directory);
+                    DirectoryWt.Delete(directory, true);
                 }
             }
 
@@ -71,17 +71,17 @@ namespace ImageTransformation
                         ImgSave(img1240X1240, directory, directoryPreview1240X1240, fileName + targetFormatExtension, targetFormat);
                         ImgSave(img1024X1024, directory, directoryPreview1024X1024, fileName + targetFormatExtension, targetFormat);
 
-                        var fileExt = Path.GetExtension(filePath);
-                        // если формат картинки не png
-                        if (fileExt != targetFormatExtension)
-                        {
-                            // сохранить картинку
-                            image.Save(Path.Combine(directory, fileName + targetFormatExtension), targetFormat);
-                            // удалить оригинал
-                            image.Dispose();
-                            FileWt.Delete(filePath);
-                            Report.WriteLine(filePath, ConsoleColor.Yellow);
-                        }
+                        //var fileExt = Path.GetExtension(filePath);
+                        //// если формат картинки не png
+                        //if (fileExt != targetFormatExtension)
+                        //{
+                        //    // сохранить картинку
+                        //    image.Save(Path.Combine(directory, fileName + targetFormatExtension), targetFormat);
+                        //    // удалить оригинал
+                        //    image.Dispose();
+                        //    FileWt.Delete(filePath);
+                        //    Report.WriteLine(filePath, ConsoleColor.Yellow);
+                        //}
                     }
                 }
             });

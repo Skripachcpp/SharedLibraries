@@ -6,7 +6,7 @@ namespace WorkingTools.Img
 {
     public static class ImgTransformation
     {
-        public static Image Resize(Image image, int width, int height) => Resize(new Bitmap(image), new Size(width, height));
+        public static Image Resize(Image image, int width, int height) => Resize((image as Bitmap) ?? new Bitmap(image), new Size(width, height));
         public static Bitmap Resize(Bitmap bitmap, int width, int height) => Resize(bitmap, new Size(width, height));
         public static Bitmap Resize(Bitmap bitmap, Size target)
         {
